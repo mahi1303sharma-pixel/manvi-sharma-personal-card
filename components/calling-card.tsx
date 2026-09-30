@@ -6,26 +6,36 @@ const interests = [
 
 export function CallingCard() {
   return (
-    <article className="w-full max-w-xl overflow-hidden rounded-2xl border border-blue-100 bg-white shadow-sm">
-      <div className="h-2 bg-blue-700" aria-hidden="true" />
-      <div className="flex flex-col gap-8 p-8 sm:p-12">
-        <header className="flex flex-col gap-3">
-          <p className="text-sm font-medium uppercase tracking-widest text-blue-700">
+    <article className="w-full max-w-2xl overflow-hidden rounded-xl bg-white shadow-xl shadow-blue-950/10 ring-1 ring-slate-200">
+      <header className="flex flex-col gap-6 bg-blue-950 px-6 py-10 text-white sm:flex-row sm:items-center sm:gap-8 sm:px-12 sm:py-12">
+        <div
+          className="flex size-16 shrink-0 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xl font-semibold tracking-wide sm:size-20 sm:text-2xl"
+          aria-hidden="true"
+        >
+          MS
+        </div>
+        <div className="flex flex-col gap-2">
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-blue-200">
             B.Tech &middot; AI &amp; ML
           </p>
-          <h1 className="text-balance text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
+          <h1 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
             Manvi Sharma
           </h1>
-          <p className="text-pretty text-lg leading-relaxed text-slate-600">
+          <p className="text-pretty text-base leading-relaxed text-blue-100 sm:text-lg">
             B.Tech student specializing in Artificial Intelligence and Machine
             Learning.
           </p>
-        </header>
+        </div>
+      </header>
 
-        <section aria-labelledby="about-heading" className="flex flex-col gap-3">
+      <div className="flex flex-col divide-y divide-slate-200 px-6 sm:px-12">
+        <section
+          aria-labelledby="about-heading"
+          className="flex flex-col gap-3 py-8 sm:flex-row sm:gap-8"
+        >
           <h2
             id="about-heading"
-            className="text-sm font-semibold uppercase tracking-widest text-slate-900"
+            className="shrink-0 text-xs font-semibold uppercase tracking-[0.2em] text-blue-950 sm:w-28 sm:pt-1"
           >
             About
           </h2>
@@ -37,11 +47,11 @@ export function CallingCard() {
 
         <section
           aria-labelledby="interests-heading"
-          className="flex flex-col gap-3"
+          className="flex flex-col gap-4 py-8 sm:flex-row sm:gap-8"
         >
           <h2
             id="interests-heading"
-            className="text-sm font-semibold uppercase tracking-widest text-slate-900"
+            className="shrink-0 text-xs font-semibold uppercase tracking-[0.2em] text-blue-950 sm:w-28 sm:pt-2"
           >
             Interests
           </h2>
@@ -49,7 +59,7 @@ export function CallingCard() {
             {interests.map((interest) => (
               <li
                 key={interest}
-                className="rounded-full bg-blue-50 px-4 py-1.5 text-sm font-medium text-blue-800"
+                className="rounded-md border border-blue-950/15 bg-blue-950/5 px-3 py-1.5 text-sm font-medium text-blue-950"
               >
                 {interest}
               </li>
