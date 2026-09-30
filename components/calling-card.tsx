@@ -21,6 +21,9 @@ export function CallingCard() {
           <h1 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
             Manvi Sharma
           </h1>
+          <p className="text-pretty text-sm font-medium text-white sm:text-base">
+            AI &amp; ML Student | Exploring Technology and Building Projects
+          </p>
           <p className="text-pretty text-base leading-relaxed text-blue-100 sm:text-lg">
             B.Tech student specializing in Artificial Intelligence and Machine
             Learning.
