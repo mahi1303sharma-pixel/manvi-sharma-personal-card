@@ -3,9 +3,9 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'AI & Technology Student Workshop | 15 October 2026',
+  title: 'Manvi Sharma | B.Tech AI & ML Student',
   description:
-    'AI & Technology Student Workshop for B.Tech students. 15 October 2026, 11:00 AM–2:00 PM at RD Engineering College, Duhai, Ghaziabad.',
+    'Manvi Sharma is a 3rd-year B.Tech AI & ML student at RD Engineering College, Duhai, Ghaziabad, interested in artificial intelligence, software development, and web development.',
   generator: 'v0.app',
   icons: {
     icon: [
